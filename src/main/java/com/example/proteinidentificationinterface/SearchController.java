@@ -33,6 +33,7 @@ public class SearchController implements DbEngineListener {
     private DbEngineSearchConfig    mConfig = null;		//obiekt konfiguracji przeszukania
     private PrintWriter             out = null;
 
+    //post
     @PostMapping("/")
     protected void doPost(@ModelAttribute("configFormObject") ConfigFormObject configFormObject) throws IOException
     {
