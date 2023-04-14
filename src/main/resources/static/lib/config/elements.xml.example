@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element mono_mass="1.0078250321" avge_mass="1.007975973611885" atomicnumber="1" symbol="X" name="Example">
+		<isotope mass="1.0078250321" massnumber="1" prob="0.999850" symbol="1H"/>
+		<isotope mass="2.0141017780" massnumber="2" prob="0.000150" symbol="2H"/>
+		<isotope mass="3.0160492777" massnumber="3" prob="0.000000" symbol="3H"/>
+	</element>
+</elements>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enzymes>
+	<enzyme>
+		<id> 100 </id>
+		<name> Example </name>
+		<cleavageAfter> GVLIA </cleavageAfter>
+		<restrictionAfter> </restrictionAfter>
+		<cleavageBefore> </cleavageBefore>
+		<restrictionBefore> P </restrictionBefore>
+		<semispecific> 0 </semispecific>
+		<ntermgain> H </ntermgain>
+		<ctermgain> OH </ctermgain>		
+	</enzyme>
+</enzymes>
+ 
+ 

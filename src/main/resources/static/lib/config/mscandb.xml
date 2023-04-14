@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- User -->
+	<section name="id">
+		<entry name="name" value=""/>
+		<entry name="username" value=""/>
+		<entry name="usermail" value=""></entry>
+	</section>
+	
+	<!-- Database -->
+	<section name="db">
+		<entry name="file" value="e:\uniprot_sprot.Homo_sapiens_rev.fasta"/>	
+		<entry name="type" value="SwissProt"/>	
+		<entry name="name" value="SwissProt [Homo Sapiens]"/>
+		<entry name="version" value="10.2015"/>
+		<entry name="regexp_id" value=""/>	
+		<entry name="regexp_name" value=""/>
+		<entry name="decoy" value=""/>
+		<entry name="decoy_id" value="RS_"/>		
+	</section>
+	
+	<!-- General search settings -->
+	<section name="search">
+		<entry name="two_pass" value="true"/>
+		<entry name="smp" value="true"/>
+		<entry name="smp_threads" value="0"></entry>
+		<entry name="embedded" value="false"></entry>
+		<entry name="verbose" value="true"></entry>
+	</section>
+	
+	<!-- Digest settings -->
+	<section name="digest">
+		<!-- Enzym -->
+		<entry name="enzyme" value="Trypsin"/>
+		<!-- Liczba niedorawek -->
+		<entry name="missed" value="1"/>
+		<!-- Zakres dlugosci peptydow -->		
+		<entry name="length" value="6-40"/>
+	</section>
+	
+	<!-- Mass tolerances  -->
+	<section name="mass">
+		<!-- parent ions -->			
+		<entry name="parent" value="5"/>
+		<entry name="parent_unit" value="ppm"/>
+		
+		<!-- fragment ions -->			
+		<entry name="fragment" value="0.01"/>
+		<entry name="fragment_unit" value="Da"/>		
+	</section>
+	
+	<!-- PTMs -->
+	<section name="mods">
+		<!-- fixed -->
+		<entry name="fixed" value="Methylthio (C)"/>
+		
+		<!-- variable -->		
+		<entry name="variable" value="Oxidation (M)"/>
+		
+		<!-- maksymalna liczba modyfikacji zmiennych jednego rodzaju w sekwencji peptydu -->
+		<entry name="max_single_variable" value="5"/>
+		<!-- maksymalna liczba modyfikacji zmiennych wszystkich rodzajow w sekwencji peptydu -->
+		<entry name="max_total_variable" value="5"/>
+		<!-- jezeli true, to nie sa generowane kombinacje polozen tego samego zestawu modyfikacji zmiennych -->
+		<entry name="single_variant" value="true"/>
+	</section>
+	
+	<!-- Zamiana sekwencji z B, X i Z na liste wariantow (B: Asx => Asn (N) lub Asp (D), Z: Glx => Glu (E) lub Gln (Q), X: dowolny aminokwas) -->
+	<section name="bxz">
+		<!-- sposob zamiany sekwencji z B, X i Z na liste wariantow
+			 exclude-> wykluczenie sekwencji
+			 expand	-> zamiana na warianty
+			 keep	-> pozostawienie bez zmian -->
+		<entry name="expand" value="expand"/>
+		<!-- maksymalna liczba znakow B lub Z w sekwencji -->
+		<entry name="max_bz" value="3"/>
+		<!-- maksymalna liczba znakow X w sekwencji -->
+		<entry name="max_x" value="1"/>
+		<!-- jezeli true, to znak X jest zaminiany na 22 aminokwasy (lacznie z O i U) -->
+		<entry name="with_ou" value="true"/>
+	</section>
+	
+	<!-- Parametry filtracji widm -->
+	<section name="parent_ions">
+		<!-- dopuszczalne stopnie naladowania jonu macierzystego -->
+		<entry name="charge_states" value="2,3"/>
+	</section>
+	
+	<!-- Parametry generacji widm teoretycznych -->
+	<!-- Jezeli pole instrument jest zdefiniowane, to pozostale reguly sa ignorowane -->
+	<section name="fragment_ions">
+		<!-- <entry name="instrument" value="ESI-TRAP"/> -->
+		
+		<!-- serie jonow -->
+		<entry name="series" value="b,y,a"/>
+		<!-- stopnie naladowania -->		
+		<entry name="charge_states" value="1,2"/>
+		<!-- neutral loss jonow potomnych, np: h2o,nh3 -->		
+		<entry name="fragment_nl" value=""/>
+	</section>
+	
+	<!-- Wybor funkcji scoringu -->
+	<section name="score">
+		<entry name="name" value="mscandb"/>
+	</section>
+	
+	<!-- Prametry funkcji scoringu MScanDB -->
+	<section name="mscandb">
+		<entry name="window" value="100.0"/>
+		<entry name="peak_depth" value="15"/>
+	</section>
+	
+	<!-- Prametry funkcji scoringu X!Tandem -->
+	<section name="xtandem">
+		<entry name="max_peaks" value="50"/>
+		<entry name="norm_intensity" value="100.0"/>
+		<entry name="min_fragment_mz" value="150.0"/>
+		<entry name="peak_blur_witdh" value="1"/>
+	</section>
+</configuration>

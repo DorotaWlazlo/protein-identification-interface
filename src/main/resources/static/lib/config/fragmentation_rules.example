@@ -1,0 +1,48 @@
+# Text between # and EOL is a comment.
+# Each section starts with a title: line
+# Each section ends with an asterisk
+# Each instrument can have one or more of the 
+# following fragment ion / rule keys: 
+# 1  # singly charged 
+# 2  # doubly charged if precursor 2+ or higher
+#      (not internal or immonium) 
+# 3  # doubly charged if precursor 3+ or higher
+#      (not internal or immonium) 
+# 4  # immonium
+# 5  # a series
+# 6  # a - NH3 if a significant and fragment includes RKNQ
+# 7  # a - H2O if a significant and fragment includes STED
+# 8  # b series
+# 9  # b - NH3 if b significant and fragment includes RKNQ
+# 10 # b - H2O if b significant and fragment includes STED
+# 11 # c series
+# 12 # x series
+# 13 # y series
+# 14 # y - NH3 if y significant and fragment includes RKNQ
+# 15 # y - H2O if y significant and fragment includes STED
+# 16 # z series
+# 17 # internal yb < 700 Da
+# 18 # internal ya < 700 Da
+# 19 # y or y++ must be significant
+# 20 # y or y++ must be highest scoring series
+# 21 # z+1 series
+# 22 # d and d' series
+# 23 # v series
+# 24 # w and w' series
+# 25 # z+2 series
+
+title:HCD
+1  # singly charged
+2  # doubly charged if precursor 2+ or higher
+5  # a series
+8  # b series
+9  # b - NH3 if b significant and fragment includes RKNQ
+10 # b - H2O if b significant and fragment includes STED
+13 # y series
+14 # y - NH3 if y significant and fragment includes RKNQ
+15 # y - H2O if y significant and fragment includes STED
+17 # internal yb < 700 Da
+18 # internal ya < 700 Da
+minInternalMass 0
+maxInternalMass 700
+*

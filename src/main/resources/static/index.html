@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Protein idenftif</title>
+</head>
+
+<body>
+<form action="/" method="POST" enctype="multipart/form-data">
+    <p>
+        <label for="enzymeSelect" id="enzymeLabel">Enzyme: </label>
+        <select name="enzyme" id="enzymeSelect">
+        </select>
+    </p>
+
+    <p>
+        <label>
+            Missed cleavages:
+            <input type="text" name="mc" value="1">
+        </label>
+    </p>
+
+    <p>
+        <label for="ptmFixSelect">Fixed modifications:</label>
+        <select multiple name="ptmFix" id="ptmFixSelect">
+        </select>
+    </p>
+
+    <p>
+        <label for="ptmVarSelect">Variable modifications:</label>
+        <select multiple name="ptmVar" id="ptmVarSelect">
+        </select>
+    </p>
+
+    <p>
+        <label>
+            Peptide tol. ±:
+            <input type="text" name="pepTol" value="5">
+        </label>
+        <label for="pepTolUnitSelect">Unit:</label>
+        <select name="pepTolUnit" id="pepTolUnitSelect">
+        </select>
+    </p>
+
+    <p>
+        <label>
+            MS/MS tol. ±:
+            <input type="text" name="fragTol" value="0.02">
+        </label>
+        <label for="fragTolUnitSelect">Unit:</label>
+        <select name="fragTolUnit" id="fragTolUnitSelect">
+        </select>
+    </p>
+
+    <p>
+        Data file:
+        <input type="file" name="file"/>
+    </p>
+
+    <p>
+        <input type="submit" name="start" value="Start search">
+    </p>
+</form>
+
+<script src="homeScript.js">
+</script>
+</body>
+</html>

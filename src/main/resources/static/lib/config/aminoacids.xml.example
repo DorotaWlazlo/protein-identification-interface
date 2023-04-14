@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aminoacids>
+	<aminoacid name="Example" shortname="Exe" symbol="X">
+		<element symbol="C" number="3"/>
+		<element symbol="N" number="1"/>
+		<element symbol="O" number="1"/>
+		<element symbol="H" number="5"/>
+	</aminoacid>
+</aminoacids>

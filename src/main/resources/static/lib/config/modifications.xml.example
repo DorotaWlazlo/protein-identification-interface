@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modifications>
+    <mod full_name="Example" hidden="1" record_id="1288" title="Example (N-term)">
+        <composition avge_mass="156.18568" mono_mass="156.101111">
+            <element number="4" symbol="N"/>
+            <element number="1" symbol="O"/>
+            <element number="12" symbol="H"/>
+            <element number="6" symbol="C"/>
+        </composition>
+        <sites>
+            <site symbol="N-term"/>
+        </sites>
+    </mod>
+</modifications>
