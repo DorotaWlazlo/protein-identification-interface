@@ -56,7 +56,7 @@ public class SearchController implements DbEngineListener {
             this.mFilenames = new String[]{path.toString()};
 
             /*
-             * Pobranie konfiguracji z HttpServletRequest. Mysle, ze takie rozwiazanie bedzie wygodniejsze niz tworzenie pliku.
+             * Pobranie konfiguracji.
              */
             this.mConfig = this.getConfig(configFormObject);
 
