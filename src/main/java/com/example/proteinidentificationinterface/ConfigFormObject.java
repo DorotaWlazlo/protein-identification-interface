@@ -3,6 +3,10 @@ package com.example.proteinidentificationinterface;
 import org.springframework.web.multipart.MultipartFile;
 
 public class ConfigFormObject {
+    private String name;
+    private String email;
+    private String title;
+    private String databaseName;
     private String enzyme;
     private int missedCleavages;
     private String[] ptmFix;
@@ -84,4 +88,36 @@ public class ConfigFormObject {
     public void setFile(MultipartFile file) {
         this.file = file;
     }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDatabaseName() {
+        return databaseName;
+    }
+
+    public void setDatabaseName(String databaseName) {
+        this.databaseName = databaseName;
+    }
+
 }

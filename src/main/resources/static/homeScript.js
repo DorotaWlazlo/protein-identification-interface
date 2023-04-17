@@ -15,6 +15,29 @@ fetch('/enzymeNames')
         }
     });
 
+// Populating Database select
+fetch('/databaseNames')
+    .then(response => response.json())
+    .then(names => {
+        const baseSelect = document.getElementById('baseSelect');
+        for (let i = 0; i < names.length; i++) {
+            const option = document.createElement('option');
+            option.value = names[i];
+            option.text = names[i];
+            baseSelect.appendChild(option);
+        }
+    });
+
+// Populating Mc select
+        const mcSelect = document.getElementById('mc');
+        for (let i = 0; i < 10; i++) {
+            const option = document.createElement('option');
+            option.value = i.toString();
+            option.text = i.toString();
+            mcSelect.appendChild(option);
+        }
+
+
 // Populating Fixed modifications select
 fetch('/ptmNames')
     .then(response => response.json())

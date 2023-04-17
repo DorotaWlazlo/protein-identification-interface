@@ -1,5 +1,6 @@
 package com.example.proteinidentificationinterface;
 
+import mscanlib.ms.db.DbTools;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -46,7 +47,7 @@ public class SearchController implements DbEngineListener {
         if(!fileName.isEmpty())
         {
             /*
-             * Zapis pliku z danymi na serwerze (docelowo trzeba zadbać o )
+             * Zapis pliku z danymi na serwerze )
              */
             String dir = "upload/dir";
 
@@ -59,8 +60,6 @@ public class SearchController implements DbEngineListener {
              * Pobranie konfiguracji.
              */
             this.mConfig = this.getConfig(configFormObject);
-
-            //this.out = response.getWriter();
 
             /*
              * Uruchomienia przeszukania: informacje o jego rozpoczeciu, przebiegu i zakonczeniu sa dostepne w metodach interfejsu DbEngineListener (notifyInitalized, notifyUpdated i notifyFinished)
@@ -82,6 +81,11 @@ public class SearchController implements DbEngineListener {
     @GetMapping("/enzymeNames")
     public String[] getEnzymeNames() {
         return EnzymeMap.getNames(true);
+    }
+
+    @GetMapping("/databaseNames")
+    public String[] getDatabaseNames() {
+        return DbTools.getDbNames(false);
     }
 
     @GetMapping("/ptmNames")
@@ -155,14 +159,14 @@ public class SearchController implements DbEngineListener {
         //T.R. 27.10.2017 MScanDB bedzie dzialal w trybie embedded (czyli nie uzyje System.exit przy bledzie)
         config.setEmbedded(true);
 
-        config.setSearchTitle("TITLE");																//nazwa przeszukania
-        config.setUser("USER");																		//uzytkownik
-        config.setUserMail("USER@MIAL");															//mail
+        config.setSearchTitle(configFormObject.getTitle());																//nazwa przeszukania
+        config.setUser(configFormObject.getName());																		//uzytkownik
+        config.setUserMail(configFormObject.getEmail());															//mail
 
         config.setSmp(false);																		//wylaczenie wielowatkowosci
 
         //T.R. 27.10.2017 Konwersja nazwy typu bazy danych na identyfikator
-        DB db = new DB(DBTools.getDbIndex("Uniprot"));												//identyfikator numeryczny (pobrany z bazy danych)
+        DB db = new DB(DBTools.getDbIndex(configFormObject.getDatabaseName()));												//identyfikator numeryczny (pobrany z bazy danych)
 
         db.setDbFilename("e:\\Projects\\tmp\\fasta\\uniprot_sprot.Homo_sapiens.fasta");				//plik FASTA (pobrany z bazy danych)
         db.setDbName("NAZWA_BAZY");																	//nazwa (pobrana z formularza)
