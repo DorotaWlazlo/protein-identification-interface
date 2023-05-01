@@ -29,13 +29,13 @@ fetch('/databaseNames')
     });
 
 // Populating Mc select
-        const mcSelect = document.getElementById('mc');
-        for (let i = 0; i < 10; i++) {
-            const option = document.createElement('option');
-            option.value = i.toString();
-            option.text = i.toString();
-            mcSelect.appendChild(option);
-        }
+const mcSelect = document.getElementById('mcSelect');
+for (let i = 0; i < 10; i++) {
+    const option = document.createElement('option');
+    option.value = i.toString();
+    option.text = i.toString();
+    mcSelect.appendChild(option);
+}
 
 
 // Populating Fixed modifications select
