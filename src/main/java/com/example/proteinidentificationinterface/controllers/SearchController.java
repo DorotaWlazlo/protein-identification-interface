@@ -1,5 +1,6 @@
-package com.example.proteinidentificationinterface;
+package com.example.proteinidentificationinterface.controllers;
 
+import com.example.proteinidentificationinterface.ConfigFormObject;
 import mscanlib.ms.db.DbTools;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -34,6 +35,7 @@ public class SearchController implements DbEngineListener {
     private DbEngineSearchConfig    mConfig = null;		//obiekt konfiguracji przeszukania
     private PrintWriter             out = null;
 
+
     //post
     @PostMapping("/")
     protected void doPost(@ModelAttribute("configFormObject") ConfigFormObject configFormObject) throws IOException
@@ -49,12 +51,13 @@ public class SearchController implements DbEngineListener {
             /*
              * Zapis pliku z danymi na serwerze )
              */
-            String dir = "upload/dir";
+            String dir = "C:\\Users\\Dorota\\Documents\\kod\\protein-identification-interface\\src\\upload";
 
-            Path path = Paths.get(dir + "/" + fileName);
+            Path path = Paths.get(dir + "\\" + fileName);
             Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
 
             this.mFilenames = new String[]{path.toString()};
+
 
             /*
              * Pobranie konfiguracji.
@@ -166,9 +169,9 @@ public class SearchController implements DbEngineListener {
         config.setSmp(false);																		//wylaczenie wielowatkowosci
 
         //T.R. 27.10.2017 Konwersja nazwy typu bazy danych na identyfikator
-        DB db = new DB(DBTools.getDbIndex(configFormObject.getDatabaseName()));												//identyfikator numeryczny (pobrany z bazy danych)
+        DB db = new DB(2);												//identyfikator numeryczny (pobrany z bazy danych)
 
-        db.setDbFilename("e:\\Projects\\tmp\\fasta\\uniprot_sprot.Homo_sapiens.fasta");				//plik FASTA (pobrany z bazy danych)
+        db.setDbFilename("C:\\Users\\Dorota\\Documents\\Cukierki\\Studia\\INŻYNIERKA\\Dane\\swissprot_Homo_Sapiens.fasta");				//plik FASTA (pobrany z bazy danych)
         db.setDbName("NAZWA_BAZY");																	//nazwa (pobrana z formularza)
         db.setDbVersion("WERSJA_BAZY");																//wersja (pobrana z bazy danych)
         db.setIdRegExp("ID_REGEXP");																//wyrazenie regularne (pobrane z bazy danych)

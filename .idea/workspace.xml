@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4233cb5-6595-4a88-9355-b64fe92feca7" name="Changes" comment="navigation bar">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/homeScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/homeScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+    <list default="true" id="c4233cb5-6595-4a88-9355-b64fe92feca7" name="Changes" comment="adding project files">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="view" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,7 +141,12 @@
       <workItem from="1682959851170" duration="277000" />
       <workItem from="1682960327229" duration="605000" />
       <workItem from="1682961043019" duration="731000" />
-      <workItem from="1682961818884" duration="670000" />
+      <workItem from="1682961818884" duration="853000" />
+      <workItem from="1683570150325" duration="50000" />
+      <workItem from="1683906796569" duration="1417000" />
+      <workItem from="1684579161295" duration="339000" />
+      <workItem from="1685127304772" duration="103000" />
+      <workItem from="1685210486387" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1681496499990</created>
@@ -176,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682961091291</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="navigation bar">
+      <created>1682962496206</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682962496206</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding project files">
+      <created>1682962654786</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682962654786</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +219,17 @@
     <MESSAGE value="basic styling" />
     <MESSAGE value="filling missed selects and updating form class" />
     <MESSAGE value="navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation bar" />
+    <MESSAGE value="adding project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding project files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchFieldError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
