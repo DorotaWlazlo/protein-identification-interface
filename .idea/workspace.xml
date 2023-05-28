@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4233cb5-6595-4a88-9355-b64fe92feca7" name="Changes" comment="adding correct fasta">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__2_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dorota/Documents/Cukierki/Studia&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dorota/Documents/kod/protein-identification-interface/src/main/resources/static/lib&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -145,6 +147,8 @@
       <workItem from="1685127304772" duration="103000" />
       <workItem from="1685210486387" duration="3518000" />
       <workItem from="1685214494471" duration="260000" />
+      <workItem from="1685301351835" duration="4153000" />
+      <workItem from="1685305528946" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1681496499990</created>
@@ -202,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685213622739</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding correct fasta">
+      <created>1685301365600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685301365600</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

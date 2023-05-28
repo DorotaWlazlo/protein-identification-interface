@@ -172,7 +172,7 @@ public class SearchController implements DbEngineListener {
         DB db = new DB(2);												//identyfikator numeryczny (pobrany z bazy danych)
 
         db.setDbFilename("C:\\Users\\Dorota\\Documents\\Cukierki\\Studia\\INŻYNIERKA\\Dane\\swissprot_Homo_Sapiens.fasta");				//plik FASTA (pobrany z bazy danych)
-        db.setDbName("NAZWA_BAZY");																	//nazwa (pobrana z formularza)
+        db.setDbName(DbTools.getDbName(2));																	//nazwa (pobrana z formularza)
         db.setDbVersion("WERSJA_BAZY");																//wersja (pobrana z bazy danych)
         db.setIdRegExp("ID_REGEXP");																//wyrazenie regularne (pobrane z bazy danych)
         db.setIdRegExp("NAME_REGEXP");																//wyrazenie regularne (pobrane z bazy danych)
