@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4233cb5-6595-4a88-9355-b64fe92feca7" name="Changes" comment="adding correct fasta">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib__2_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/homeScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/homeScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +149,9 @@
       <workItem from="1685210486387" duration="3518000" />
       <workItem from="1685214494471" duration="260000" />
       <workItem from="1685301351835" duration="4153000" />
-      <workItem from="1685305528946" duration="454000" />
+      <workItem from="1685305528946" duration="477000" />
+      <workItem from="1685352911309" duration="1259000" />
+      <workItem from="1685354196940" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1681496499990</created>
@@ -213,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685301365600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding correct fasta">
+      <created>1685305992693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685305992693</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -9,8 +9,51 @@
 <body>
 <div class="topnav">
     <label> Protein identification interface </label>
-    <a>Sign in</a>
-    <a>Sign up</a>
+    <div class="dropdown">
+        <button class="dropbtn">Sign in
+        </button>
+        <div class="dropdown-content">
+            <form action="/login" method="post">
+                <label class="margin-bottom-5">Username: </label><br>
+                <input class="margin-bottom-5" type="text" name="username" placeholder="username" required><br>
+                <label class="margin-bottom-5">Password: </label><br>
+                <input class="margin-bottom-5" type="password" name="password" placeholder="password" required><br>
+                <input class="margin-bottom-5" type="submit" value="Sign in">
+            </form>
+        </div>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn" onclick="openForm()">Sign up</button>
+    <div class="form-popup" id="register">
+        <button type="button" class="close-btn" onclick="closeForm()">&times;</button>
+        <form action="/register" class="formContainer" id="form">
+            <h2>Register</h2>
+            <div class="form-element">
+                <label for="name2">Name:</label>
+                <input type="text" id="name2" placeholder="name" name="name">
+                <div class="err"></div>
+            </div>
+            <div class="form-element">
+                <label for="email2">E-mail:</label>
+                <input type="text" id="email2" placeholder="email" name="email">
+                <div class="err"></div>
+            </div>
+            <div class="form-element">
+                <label for="psw">Password:</label>
+                <input type="password" id="psw" placeholder="password" name="psw">
+                <div class="err"></div>
+            </div>
+            <div class="form-element">
+                <label for="psw2">Repeat password:</label>
+                <input type="password" id="psw2" placeholder="password" name="psw">
+                <div class="err"></div>
+            </div>
+            <div class ="form-element">
+                <button type="submit" class="register-btn">Sign up</button>
+            </div>
+        </form>
+    </div>
+    </div>
 </div>
 
 <div class = "form-wrapper">
