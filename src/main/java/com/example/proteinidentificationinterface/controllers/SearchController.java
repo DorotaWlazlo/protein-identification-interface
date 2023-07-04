@@ -18,7 +18,7 @@ import java.util.List;
 import apps.mscandb.*;
 import mscanlib.common.*;
 import mscanlib.ms.db.DB;
-import mscanlib.ms.db.DBTools;
+//import mscanlib.ms.db.DBTools;
 import mscanlib.ms.mass.*;
 import mscanlib.ms.msms.*;
 import mscanlib.ms.msms.dbengines.*;
@@ -67,7 +67,7 @@ public class SearchController implements DbEngineListener {
             /*
              * Uruchomienia przeszukania: informacje o jego rozpoczeciu, przebiegu i zakonczeniu sa dostepne w metodach interfejsu DbEngineListener (notifyInitalized, notifyUpdated i notifyFinished)
              */
-            MScanDb dbEngine = new MScanDb(this.mFilenames,this.mConfig);
+            MScanDb dbEngine = new MScanDb(Arrays.asList(this.mFilenames),this.mConfig,null);
             dbEngine.addDbEngineListener(this);
             dbEngine.start();
         }

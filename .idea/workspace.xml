@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4233cb5-6595-4a88-9355-b64fe92feca7" name="Changes" comment="adding correct fasta">
+    <list default="true" id="c4233cb5-6595-4a88-9355-b64fe92feca7" name="Changes" comment="adding login and register forms">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/MScanDB.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/dbengine-guava-21.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/jopt-simple-5.0.4.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/homeScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/homeScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proteinidentificationinterface/controllers/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/FastNN.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/MScanDb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/combination.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/guava-21.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/lib/mscanlib.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/mscanlib.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +78,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dorota/Documents/kod/protein-identification-interface/src/main/resources/static/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dorota/Documents/kod/protein-identification-interface/src/main/resources/static&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -87,10 +93,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface\src\main\resources\static" />
       <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface" />
+      <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface\libs" />
       <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface\libs" />
       <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface" />
       <recent name="C:\Users\Dorota\Documents\kod\protein-identification-interface\src\main\resources\static" />
     </key>
@@ -151,7 +160,11 @@
       <workItem from="1685301351835" duration="4153000" />
       <workItem from="1685305528946" duration="477000" />
       <workItem from="1685352911309" duration="1259000" />
-      <workItem from="1685354196940" duration="2646000" />
+      <workItem from="1685354196940" duration="4595000" />
+      <workItem from="1685527262049" duration="24000" />
+      <workItem from="1685624949269" duration="485000" />
+      <workItem from="1685817039299" duration="27000" />
+      <workItem from="1687522110210" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1681496499990</created>
@@ -223,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685305992693</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding login and register forms">
+      <created>1685356895721</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685356895721</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +267,8 @@
     <MESSAGE value="navigation bar" />
     <MESSAGE value="adding project files" />
     <MESSAGE value="adding correct fasta" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding correct fasta" />
+    <MESSAGE value="adding login and register forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding login and register forms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
